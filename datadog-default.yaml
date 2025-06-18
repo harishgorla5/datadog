@@ -1,0 +1,19 @@
+datadog:
+  apiKeyExistingSecret: datadog-secret
+  site: us5.datadoghq.com
+  logs:
+    enabled: true
+  apm:
+    enabled: true
+  processAgent:
+    enabled: true
+  kubeStateMetricsEnabled: true
+  leaderElection: true
+
+daemonset:
+  useHostNetwork: true
+
+clusterAgent:
+  enabled: true
+  metricsProvider:
+    enabled: true
